@@ -128,6 +128,7 @@
     await getSignInfo();
   }
 
+
   // 签到确认刷新页面
   function onConfirm() {
     state.showModel = false;

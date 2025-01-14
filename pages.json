@@ -7,7 +7,7 @@
 		}
 	},
 	"pages": [{
-			"path": "pages/index/index",
+			"path": "pages/index/index", //名字叫不叫index无所谓，位置在第一个，就是首页
 			"aliasPath": "/",
 			"style": {
 				"navigationBarTitleText": "首页",
@@ -82,10 +82,22 @@
 				"title": "自定义页面",
 				"group": "商城"
 			}
+		},
+		{
+			"path": "pages/index/demo",
+			"style": {
+				"navigationBarTitleText": ""
+			},
+			"meta": {
+				"auth": false,
+				"sync": true,
+				"title": "demo",
+				"group": "demo"
+			}
 		}
 	],
 	"subPackages": [{
-			"root": "pages/goods",
+			"root": "pages/goods",  // 分包1
 			"pages": [{
 					"path": "index",
 					"style": {
@@ -160,7 +172,7 @@
 			]
 		},
 		{
-			"root": "pages/order",
+			"root": "pages/order", // 分包2
 			"pages": [{
 					"path": "detail",
 					"style": {
@@ -665,11 +677,26 @@
                   }
                 }
 			]
-		}
+		},
+		{
+			"root": "pages/demo",
+			"pages": [{
+				"path": "index",
+				"style": {
+					"navigationBarTitleText": "Demo-Test"
+				},
+				"meta": {
+					"auth": true,
+					"sync": true,
+					"title": "Demo-Test",
+					"group": "Demo-Test"
+				}
+			}]
+		},
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "芋道商城",
+		"navigationBarTitleText": "AI助手",
 		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#FFFFFF",
 		"navigationStyle": "custom"
